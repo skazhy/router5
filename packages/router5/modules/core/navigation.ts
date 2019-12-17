@@ -8,7 +8,6 @@ export default function withNavigation(router: Router): Router {
     let cancelCurrentTransition
 
     router.navigate = navigate
-    router.navigate = navigate
 
     router.navigateToDefault = (...args) => {
         const opts = typeof args[0] === 'object' ? args[0] : {}
